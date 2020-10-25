@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Laporan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.css"
+        integrity="sha512-C7hOmCgGzihKXzyPU/z4nv97W0d9bv4ALuuEbSf6hm93myico9qa0hv4dODThvCsqQUmKmLcJmlpRmCaApr83g=="
+        crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html,
+        body {
+
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body style="overflow-x: hidden;">
+    <div class="row " style="height: 100%;">
+        <div class="col-md-2" style="background-color:#ff6700;">
+            <center>
+                <div class="bayangan"
+                    style="background-color: white;border-radius: 10px;width: 80%;padding: 10px;margin-top: 10px;">
+                    <center>
+                        <img class="mb-4" src="profil.png" alt="" width="80%">
+                        <p>Admin</p>
+                    </center>
+
+                </div>
+                <div class="bayangan"
+                    style="background-color: white;border-radius: 10px;width: 80%;padding: 5px;margin-top: 10px;">
+                </div>
+                <div class="bayangan" style="background-color: white;border-radius: 10px;width: 80%;margin-top: 10px;">
+                    <a href="Dashboard.html">
+                        <div style="padding: 10px;color: black;">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-fill"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                <path fill-rule="evenodd"
+                                    d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                            </svg>
+
+                            Dashboard
+                        </div>
+                    </a>
+
+                </div>
+                <div class="bayangan" style="background-color: white;border-radius: 10px;width: 80%;margin-top: 10px;">
+                    <a href="Laporan.html">
+                        <div style="padding: 10px;color: black;">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-journal-album"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
+                                <path
+                                    d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm4-6.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-5z" />
+                                <path fill-rule="evenodd"
+                                    d="M6 11.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+
+                            Laporan
+                        </div>
+                    </a>
+
+                </div>
+                <div class="bayangan"
+                    style="background-color: white;border-radius: 10px;width: 80%;margin-top: 10px;bottom: 0px;">
+                    <a href="Login.html">
+                        <div style="padding: 10px;color: black;">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-box-arrow-in-right"
+                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                                <path fill-rule="evenodd"
+                                    d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                            </svg>
+
+                            Logout
+                        </div>
+                    </a>
+
+                </div>
+            </center>
+
+
+        </div>
+        <div class="col-md-10" style="padding: 20px;margin-left: -7px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="bayangan" style="padding:10px;border-radius: 10px;margin-bottom: 15px;">
+                        <p>
+                        <h3><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. </b></h3>
+                        </p>
+                    </div>
+                    <div class="bayangan" style="padding:10px;border-radius: 10px;margin-bottom: 15px;">
+
+                        <div class="bayangan"
+                            style="padding:10px;border-radius: 10px;margin-bottom: 15px;background-color: #ff6700;color: white;">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequuntur porro
+                                ducimus temporibus minus dolorum natus quod? Temporibus, suscipit! Harum, quidem!
+                                Ducimus magnam voluptatem tenetur ex. Repellat maiores fuga enim!</p>
+                        </div>
+                        <table id="example" class="table table-striped table-bordered dt-responsive nowrap"
+                            style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Tanggal</th>
+                                    <th>Wilayah</th>
+                                    <th>Produksi</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <td>20/10/2020</td>
+                                    <td>1</td>
+                                    <td>100.000</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                            data-target="#edit"><span
+                                                class="glyphicon glyphicon-pencil">Edit</span></button>
+                                        <button class="btn btn-danger btn-xs" data-title="Edit" data-toggle="modal"
+                                            data-target="#edit"><span
+                                                class="glyphicon glyphicon-pencil">Hapus</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <td>21/10/2020</td>
+                                    <td>2</td>
+                                    <td>150.000</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                            data-target="#edit"><span
+                                                class="glyphicon glyphicon-pencil">Edit</span></button>
+                                        <button class="btn btn-danger btn-xs" data-title="Edit" data-toggle="modal"
+                                            data-target="#edit"><span
+                                                class="glyphicon glyphicon-pencil">Hapus</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>3</th>
+                                    <td>22/10/2020</td>
+                                    <td>3</td>
+                                    <td>200.000</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                            data-target="#edit"><span
+                                                class="glyphicon glyphicon-pencil">Edit</span></button>
+                                        <button class="btn btn-danger btn-xs" data-title="Edit" data-toggle="modal"
+                                            data-target="#edit"><span
+                                                class="glyphicon glyphicon-pencil">Hapus</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>4</th>
+                                    <td>21/10/2020</td>
+                                    <td>4</td>
+                                    <td>300.000</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                            data-target="#edit"><span
+                                                class="glyphicon glyphicon-pencil">Edit</span></button>
+                                        <button class="btn btn-danger btn-xs" data-title="Edit" data-toggle="modal"
+                                            data-target="#edit"><span
+                                                class="glyphicon glyphicon-pencil">Hapus</span></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>5</th>
+                                    <td>22/10/2020</td>
+                                    <td>5</td>
+                                    <td>300.000</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
+                                            data-target="#edit"><span
+                                                class="glyphicon glyphicon-pencil">Edit</span></button>
+                                        <button class="btn btn-danger btn-xs" data-title="Edit" data-toggle="modal"
+                                            data-target="#edit"><span
+                                                class="glyphicon glyphicon-pencil">Hapus</span></button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+        integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"
+        integrity="sha512-SuxO9djzjML6b9w9/I07IWnLnQhgyYVSpHZx0JV97kGBfTIsUYlWflyuW4ypnvhBrslz1yJ3R+S14fdCWmSmSA=="
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+</body>
+
+</html>
